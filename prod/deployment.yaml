@@ -19,7 +19,7 @@ spec:
       - name: hugo-blog
         image: daisukebtw/hugo-blog:latest
         ports:
-        - containerPort: 80
+        - containerPort: 1313
         resources:
           requests:
             memory: "256Mi"
