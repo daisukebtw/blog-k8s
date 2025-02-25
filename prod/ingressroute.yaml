@@ -13,4 +13,4 @@ spec:
         - name: hugo-blog
           port: 8084
   tls:
-    secretName: hugo-blog-certificate-secret
+    secretName: blog-certificate-secret
