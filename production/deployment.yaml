@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hugo-blog
+  namespace: blog
+  labels:
+    app: hugo-blog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hugo-blog
+  template:
+    metadata:
+      labels:
+        app: hugo-blog
+    spec:
+      containers:
+      - name: hugo-blog
+        image: daisukebtw/hugo-blog:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "500m"
+          limits:
+            memory: "512Mi"
+            cpu: "1"
