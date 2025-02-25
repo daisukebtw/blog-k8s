@@ -9,5 +9,5 @@ spec:
   ports:
     - protocol: TCP
       port: 8084 # Exposed port
-      targetPort: 1313 # Port the container listens on
+      targetPort: 80 # Port the container listens on
   type: ClusterIP
