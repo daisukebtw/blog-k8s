@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: hugo-blog
-        image: daisukebtw/hugo-blog:0.1.8
+        image: daisukebtw/hugo-blog:0.2.0
         ports:
         - containerPort: 80
         resources:
